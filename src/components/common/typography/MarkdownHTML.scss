@@ -1,0 +1,696 @@
+@import '../../../styles/variables.scss';
+
+.markdown-html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: $color-body;
+    font-family: $font-family-body;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.markdown-html a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.markdown-html a:active,
+.markdown-html a:hover {
+    outline-width: 0;
+}
+
+.markdown-html strong {
+    font-weight: inherit;
+}
+
+.markdown-html strong {
+    font-weight: bolder;
+}
+
+.markdown-html h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.markdown-html img {
+    border-style: none;
+}
+
+.markdown-html svg:not(:root) {
+    overflow: hidden;
+}
+
+.markdown-html code,
+.markdown-html kbd,
+.markdown-html pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.markdown-html hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+.markdown-html input {
+    font: inherit;
+    margin: 0;
+}
+
+.markdown-html input {
+    overflow: visible;
+}
+
+.markdown-html button:-moz-focusring,
+.markdown-html [type="button"]:-moz-focusring,
+.markdown-html [type="reset"]:-moz-focusring,
+.markdown-html [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+.markdown-html [type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.markdown-html table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.markdown-html td,
+.markdown-html th {
+    padding: 0;
+}
+
+.markdown-html * {
+    box-sizing: border-box;
+}
+
+.markdown-html input {
+    font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-html a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.markdown-html a:hover,
+.markdown-html a:active {
+    text-decoration: underline;
+}
+
+.markdown-html hr {
+    height: 0;
+    margin: 15px 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.markdown-html hr::before {
+    display: table;
+    content: "";
+}
+
+.markdown-html hr::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.markdown-html h1,
+.markdown-html h2,
+.markdown-html h3,
+.markdown-html h4,
+.markdown-html h5,
+.markdown-html h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.markdown-html h1 {
+    font-size: 30px;
+}
+
+.markdown-html h2 {
+    font-size: 21px;
+}
+
+.markdown-html h3 {
+    font-size: 16px;
+}
+
+.markdown-html h4 {
+    font-size: 14px;
+}
+
+.markdown-html h5 {
+    font-size: 12px;
+}
+
+.markdown-html h6 {
+    font-size: 11px;
+}
+
+.markdown-html p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.markdown-html blockquote {
+    margin: 0;
+}
+
+.markdown-html ul,
+.markdown-html ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.markdown-html ol ol,
+.markdown-html ul ol {
+    list-style-type: lower-roman;
+}
+
+.markdown-html ul ul ol,
+.markdown-html ul ol ol,
+.markdown-html ol ul ol,
+.markdown-html ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+.markdown-html ul li {
+    list-style-type: disc;
+}
+
+.markdown-html dd {
+    margin-left: 0;
+}
+
+.markdown-html code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+}
+
+.markdown-html pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-html .pl-0 {
+    padding-left: 0 !important;
+}
+
+.markdown-html .pl-1 {
+    padding-left: 3px !important;
+}
+
+.markdown-html .pl-2 {
+    padding-left: 6px !important;
+}
+
+.markdown-html .pl-3 {
+    padding-left: 12px !important;
+}
+
+.markdown-html .pl-4 {
+    padding-left: 24px !important;
+}
+
+.markdown-html .pl-5 {
+    padding-left: 36px !important;
+}
+
+.markdown-html .pl-6 {
+    padding-left: 48px !important;
+}
+
+.markdown-html .form-select::-ms-expand {
+    opacity: 0;
+}
+
+.markdown-html:before {
+    display: table;
+    content: "";
+}
+
+.markdown-html:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.markdown-html>*:first-child {
+    margin-top: 0 !important;
+}
+
+.markdown-html>*:last-child {
+    margin-bottom: 0 !important;
+}
+
+.markdown-html a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+.markdown-html .anchor {
+    display: inline-block;
+    padding-right: 2px;
+    margin-left: -18px;
+}
+
+.markdown-html .anchor:focus {
+    outline: none;
+}
+
+.markdown-html h1,
+.markdown-html h2,
+.markdown-html h3,
+.markdown-html h4,
+.markdown-html h5,
+.markdown-html h6 {
+    margin-top: 1em;
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.markdown-html h1 .octicon-link,
+.markdown-html h2 .octicon-link,
+.markdown-html h3 .octicon-link,
+.markdown-html h4 .octicon-link,
+.markdown-html h5 .octicon-link,
+.markdown-html h6 .octicon-link {
+    color: #000;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+.markdown-html h1:hover .anchor,
+.markdown-html h2:hover .anchor,
+.markdown-html h3:hover .anchor,
+.markdown-html h4:hover .anchor,
+.markdown-html h5:hover .anchor,
+.markdown-html h6:hover .anchor {
+    text-decoration: none;
+}
+
+.markdown-html h1:hover .anchor .octicon-link,
+.markdown-html h2:hover .anchor .octicon-link,
+.markdown-html h3:hover .anchor .octicon-link,
+.markdown-html h4:hover .anchor .octicon-link,
+.markdown-html h5:hover .anchor .octicon-link,
+.markdown-html h6:hover .anchor .octicon-link {
+    visibility: visible;
+}
+
+.markdown-html h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+
+.markdown-html h1 .anchor {
+    line-height: 1;
+}
+
+.markdown-html h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+.markdown-html h2 .anchor {
+    line-height: 1;
+}
+
+.markdown-html h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+.markdown-html h3 .anchor {
+    line-height: 1.2;
+}
+
+.markdown-html h4 {
+    font-size: 1.25em;
+}
+
+.markdown-html h4 .anchor {
+    line-height: 1.2;
+}
+
+.markdown-html h5 {
+    font-size: 1em;
+}
+
+.markdown-html h5 .anchor {
+    line-height: 1.1;
+}
+
+.markdown-html h6 {
+    font-size: 1em;
+    color: #777;
+}
+
+.markdown-html h6 .anchor {
+    line-height: 1.1;
+}
+
+.markdown-html p,
+.markdown-html blockquote,
+.markdown-html ul,
+.markdown-html ol,
+.markdown-html dl,
+.markdown-html table,
+.markdown-html pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-html hr {
+    height: 4px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+}
+
+.markdown-html ul,
+.markdown-html ol {
+    padding-left: 2em;
+}
+
+.markdown-html ul ul,
+.markdown-html ul ol,
+.markdown-html ol ol,
+.markdown-html ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.markdown-html li>p {
+    margin-top: 16px;
+}
+
+.markdown-html dl {
+    padding: 0;
+}
+
+.markdown-html dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.markdown-html dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+.markdown-html blockquote {
+    padding: 0 15px;
+    color: #777;
+    border-left: 4px solid #ddd;
+}
+
+.markdown-html blockquote>:first-child {
+    margin-top: 0;
+}
+
+.markdown-html blockquote>:last-child {
+    margin-bottom: 0;
+}
+
+.markdown-html table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+}
+
+.markdown-html table th {
+    font-weight: bold;
+}
+
+.markdown-html table th,
+.markdown-html table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
+.markdown-html table tr {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.markdown-html table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+.markdown-html img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #fff;
+}
+
+.markdown-html code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+}
+
+.markdown-html code:before,
+.markdown-html code:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+}
+
+.markdown-html pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
+}
+
+.markdown-html .highlight {
+    margin-bottom: 16px;
+}
+
+.markdown-html .highlight pre,
+.markdown-html pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+
+.markdown-html .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+.markdown-html pre {
+    word-wrap: normal;
+}
+
+.markdown-html pre code {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+}
+
+.markdown-html pre code:before,
+.markdown-html pre code:after {
+    content: normal;
+}
+
+.markdown-html kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 11px;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-html .pl-c {
+    color: #969896;
+}
+
+.markdown-html .pl-c1,
+.markdown-html .pl-s .pl-v {
+    color: #0086b3;
+}
+
+.markdown-html .pl-e,
+.markdown-html .pl-en {
+    color: #795da3;
+}
+
+.markdown-html .pl-s .pl-s1,
+.markdown-html .pl-smi {
+    color: #333;
+}
+
+.markdown-html .pl-ent {
+    color: #63a35c;
+}
+
+.markdown-html .pl-k {
+    color: #a71d5d;
+}
+
+.markdown-html .pl-pds,
+.markdown-html .pl-s,
+.markdown-html .pl-s .pl-pse .pl-s1,
+.markdown-html .pl-sr,
+.markdown-html .pl-sr .pl-cce,
+.markdown-html .pl-sr .pl-sra,
+.markdown-html .pl-sr .pl-sre {
+    color: #183691;
+}
+
+.markdown-html .pl-v {
+    color: #ed6a43;
+}
+
+.markdown-html .pl-id {
+    color: #b52a1d;
+}
+
+.markdown-html .pl-ii {
+    background-color: #b52a1d;
+    color: #f8f8f8;
+}
+
+.markdown-html .pl-sr .pl-cce {
+    color: #63a35c;
+    font-weight: bold;
+}
+
+.markdown-html .pl-ml {
+    color: #693a17;
+}
+
+.markdown-html .pl-mh,
+.markdown-html .pl-mh .pl-en,
+.markdown-html .pl-ms {
+    color: #1d3e81;
+    font-weight: bold;
+}
+
+.markdown-html .pl-mq {
+    color: #008080;
+}
+
+.markdown-html .pl-mi {
+    color: #333;
+    font-style: italic;
+}
+
+.markdown-html .pl-mb {
+    color: #333;
+    font-weight: bold;
+}
+
+.markdown-html .pl-md {
+    background-color: #ffecec;
+    color: #bd2c00;
+}
+
+.markdown-html .pl-mi1 {
+    background-color: #eaffea;
+    color: #55a532;
+}
+
+.markdown-html .pl-mdr {
+    color: #795da3;
+    font-weight: bold;
+}
+
+.markdown-html .pl-mo {
+    color: #1d3e81;
+}
+
+.markdown-html kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-html .full-commit .btn-outline:not(:disabled):hover {
+    color: #4078c0;
+    border: 1px solid #4078c0;
+}
+
+.markdown-html :checked+.radio-label {
+    position: relative;
+    z-index: 1;
+    border-color: #4078c0;
+}
+
+.markdown-html .octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
+}
+
+.markdown-html .task-list-item {
+    list-style-type: none;
+}
+
+.markdown-html .task-list-item+.task-list-item {
+    margin-top: 3px;
+}
+
+.markdown-html .task-list-item input {
+    margin: 0 0.2em 0.25em -1.6em;
+    vertical-align: middle;
+}
+
+.markdown-html hr {
+    border-bottom-color: #eee;
+}

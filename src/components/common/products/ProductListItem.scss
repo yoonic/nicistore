@@ -1,0 +1,18 @@
+@import '../../../styles/variables.scss';
+
+.product-list-item {
+    padding: 7px;
+    text-align: center;
+
+    & > a {
+        text-decoration: none;
+    }
+}
+
+.product-list-item__name {
+    margin-top: 5px;
+}
+
+.product-list-item__price {
+    margin-top: 5px;
+}

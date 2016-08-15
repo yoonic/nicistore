@@ -1,0 +1,67 @@
+/*
+ * Header
+ */
+
+.admin-collections-edit__header {
+    display: flex;
+}
+
+.admin-collections-edit__title {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.admin-collections-edit__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.admin-collections-edit__toolbar-item {
+    align-self: center;
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+/*
+ * Form
+ */
+
+.admin-collections-edit__form {
+    display: flex;
+    margin-top: 30px;
+}
+
+.admin-collections-edit__left-column {
+    width: 70%;
+}
+
+.admin-collections-edit__right-column {
+    width: 30%;
+    margin-left: 30px;
+}
+
+.admin-collection-edit__form-item {
+
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+}
+
+.admin-collection-edit__checkbox-inline {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-collection-edit__checkbox-inline-items {
+    display: flex;
+    margin-top: 7.5px;
+
+    & > div:not(:first-child) {
+        margin-left: 30px;
+    }
+}

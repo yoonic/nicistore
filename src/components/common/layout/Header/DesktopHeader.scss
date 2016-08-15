@@ -1,0 +1,129 @@
+@import '../../../../styles/variables.scss';
+
+.desktop-header {
+    display: flex;
+    justify-content: center;
+    border-top: solid 3px $color-primary;
+    border-bottom: solid 1px #eeeeee;
+}
+
+/*
+ * Container
+ */
+
+.desktop-header__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: $layout-max-width;
+    padding: 10px 32px 10px 32px;
+    @media only screen and (min-width: $layout-max-width) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.desktop-header__row {
+    display: flex;
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-top: 7.5px;
+    }
+}
+
+.desktop-header__container-left-column {
+    display: flex;
+    width: 100%;
+}
+
+.desktop-header__container-right-column {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 240px;
+    align-self: center;
+}
+
+/*
+ * Logo & Buttons
+ */
+
+.desktop-header__logo {
+    width: 100%;
+    min-width: 129px;
+    max-width: 129px;
+    height: 47px;
+    background: url('../../../../../static/logo.png');
+    background-size: 100%;
+}
+
+.desktop-header__logo-link {
+    align-self: center;
+}
+
+.desktop-header__button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*
+ * Navigation
+ */
+
+.desktop-header__navigation {
+    align-self: center;
+}
+
+/*
+ * Account & Cart
+ */
+
+.desktop-header__account {
+    display: flex;
+    align-self: center;
+}
+
+.desktop-header__logout-button,
+.desktop-header__register-button {
+    align-self: center;
+    padding: 10px;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            span {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.desktop-header__login-button,
+.desktop-header__account-button {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            span {
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+.desktop-header__cart {
+    margin-left: 20px;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('./cart.png');
+    background-size: 100%;
+}

@@ -1,0 +1,49 @@
+@import '../../../styles/variables.scss';
+
+.select__label {
+    margin-bottom: 7.5px;
+}
+
+.select__select {
+    width: 100%;
+    min-height: 32px;
+    padding: 15px 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    background: #fff url('./down_arrow.png') no-repeat right center;
+    background-size: 17px 5px;
+    text-indent: 10px;
+    font: $font-size-small $font-family-body;
+    color: $color-body;
+    transition: border-color 0.2s linear, box-shadow 0.2s ease;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    &--small {
+        padding: 8.5px 0;
+    }
+
+    &--large {
+        padding: 22.5px 0;
+    }
+
+    &:hover {
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+    }
+
+    &--error {
+        border-color: $color-error;
+    }
+}
+
+.select__error {
+    margin-top: 3px;
+    color: $color-error;
+
+    & > span {
+        color: $color-error;
+    }
+}

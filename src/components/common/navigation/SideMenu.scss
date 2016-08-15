@@ -1,0 +1,41 @@
+.side-menu__item {
+    padding: 15px;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+}
+
+/*
+ * Homepage
+ */
+
+.side-menu__homepage {
+    background-color: #eee;
+    box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4);
+}
+
+/*
+ * Collections
+ */
+
+.side-menu__collection-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+/*
+ * Account
+ */
+
+.side-menu__account {
+    margin-top: 50px;
+    background-color: #eee;
+    box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4);
+}
+
+.side-menu__account-item {
+    &:not(:last-child) {
+        border-bottom: 1px solid #fff;
+    }
+}

@@ -1,0 +1,54 @@
+@import '../../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.admin-collections__header {
+    display: flex;
+}
+
+.admin-collections__title {
+    width: 100%;
+    align-self: center;
+}
+
+.admin-collections__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.admin-collections__add-button {
+    width: 130px;
+}
+
+/*
+ * List
+ */
+
+.admin-collections__list {
+    margin-top: 30px;
+}
+
+.admin-collections__link {
+    & > a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.admin-collections__labels {
+    display: flex;
+}
+
+.admin-collections__label {
+    &:not(:first-child) {
+        margin-left: 5px;
+    }
+}

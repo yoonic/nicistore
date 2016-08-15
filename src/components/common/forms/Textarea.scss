@@ -1,0 +1,39 @@
+@import '../../../styles/variables.scss';
+
+.textarea__label {
+    margin-bottom: 7.5px;
+}
+
+.textarea__input {
+    width: 100%;
+    max-width: 100%;
+    min-height: 32px;
+    padding: 15px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    font: $font-size-small $font-family-body;
+    color: $color-body;
+    transition: border-color 0.2s linear, box-shadow 0.2s ease;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+        min-height: 32px;
+    }
+
+    &--error {
+        border-color: $color-error;
+    }
+}
+
+.textarea__error {
+    margin-top: 3px;
+    color: $color-error;
+
+    & > span {
+        color: $color-error;
+    }
+}

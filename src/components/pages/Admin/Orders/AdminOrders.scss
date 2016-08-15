@@ -1,0 +1,66 @@
+@import '../../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.admin-orders__header {
+    display: flex;
+}
+
+.admin-orders__title {
+    width: 100%;
+    align-self: center;
+}
+
+.admin-orders__toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 100%;
+}
+
+/*
+ * Loader
+ */
+
+.admin-orders__spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*
+ * List
+ */
+
+.admin-orders__list {
+    margin-top: 30px;
+}
+
+.admin-orders__link {
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+
+        & > span {
+            color: $color-primary;
+        }
+    }
+}
+
+.adm-orders__user-icon {
+    margin-left: 5px;
+}
+
+.admin-orders__no-results {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: $color-secondary;
+    border-radius: 4px;
+}

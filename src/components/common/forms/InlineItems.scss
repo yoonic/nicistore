@@ -1,0 +1,33 @@
+@import '../../../styles/mixins/breakpoints.scss';
+
+.inline-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.inline-items__content {
+    display: flex;
+    margin-top: 7.5px;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+
+    & > div {
+        width: 100%;
+        align-self: center;
+    }
+
+    & > button {
+        align-self: center;
+    }
+
+    & > div:not(:last-child) {
+        margin-right: 30px;
+
+        @include breakpoint(handhelds) {
+            margin-right: 0;
+            margin-bottom: 7.5px;
+        }
+    }
+}

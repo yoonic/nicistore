@@ -1,0 +1,188 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.account {
+    margin: 30px 0 30px 0;
+}
+
+/*
+ * Header
+ */
+
+.account__title {
+    text-align: center;
+}
+
+/*
+ * Content
+ */
+
+.account__content {
+    display: flex;
+    margin-top: 15px;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+}
+
+/*
+ * Left Column
+ */
+
+.account__left-column {
+    width: 100%;
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+    }
+}
+
+// Details
+
+
+.account__details-title {
+    width: 100%;
+}
+
+.account__details-item {
+    margin-top: 15px;
+}
+
+.account__details-actions {
+    display: flex;
+    margin-top: 15px;
+}
+
+.account__details-action-button {
+    width: 190px;
+
+    &:not(:first-child) {
+        margin-left: 15px;
+    }
+}
+
+// Addresses
+
+.account__addresses {
+    margin-top: 30px;
+
+    @include breakpoint(handhelds) {
+        margin-top: 40px;
+    }
+}
+
+.account__addresses-actions {
+    margin-top: 15px;
+}
+
+.account__addresses-new-button {
+    width: 190px;
+}
+
+.account__addresses-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+.account__addresses-item {
+    min-width: 250px;
+    padding: 7.5px 7.5px 7.5px 0;
+    margin: 7.5px 7.5px 7.5px 0;
+
+    @include breakpoint(handhelds) {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.account__address-vatin {
+    margin-top: 5px;
+}
+
+.account__address-line-1 {
+    margin-top: 5px;
+}
+
+.account__address-actions {
+    margin-top: 10px;
+    display: flex;
+}
+
+.account__address-edit,
+.account__address-delete {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+        span {
+            color: $color-primary;
+        }
+    }
+}
+
+.account__address-delete {
+    margin-left: 10px;
+}
+
+/*
+ * Right Column
+ */
+
+.account__right-column {
+    width: 100%;
+    border-left: 1px solid #eee;
+    margin-left: 15px;
+    padding-left: 30px;
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+    }
+}
+
+/*
+ * Modals
+ */
+
+.account__modal-form-item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.account__modal-address-line2 {
+    margin-top: 10px;
+}
+
+.account__modal-form-actions {
+    display: flex;
+    margin-top: 30px;
+}
+
+.account__modal-form-action-item {
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-left: 15px;
+    }
+}

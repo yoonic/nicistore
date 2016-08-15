@@ -1,0 +1,75 @@
+@import '../../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.admin-products__header {
+    display: flex;
+}
+
+.admin-products__title {
+    width: 100%;
+    align-self: center;
+}
+
+.admin-products__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.admin-products__toolbar-button {
+    width: 130px;
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+/*
+ * Loader
+ */
+
+.admin-products__spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*
+ * List
+ */
+
+.admin-products__list {
+    margin-top: 30px;
+}
+
+.admin-products__link {
+    & > a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.admin-products__labels {
+    display: flex;
+}
+
+.admin-products__label {
+    &:not(:first-child) {
+        margin-left: 5px;
+    }
+}
+
+.admin-products__no-results {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: $color-secondary;
+    border-radius: 4px;
+}

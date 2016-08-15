@@ -1,0 +1,74 @@
+.handhelds-header {
+    display: flex;
+    padding: 15px;
+    border-bottom: solid 1px #eeeeee;
+}
+
+/*
+ * Left Actions
+ */
+
+.handhelds-header__left-actions {
+    align-self: center;
+    text-align: left;
+    width: 20%;
+}
+
+/*
+ * Logo
+ */
+
+.handhelds-header__title {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 60%;
+}
+
+.handhelds-header__logo {
+    width: 100%;
+    min-width: 80px;
+    max-width: 80px;
+    height: 30px;
+    background: url('../../../../../static/logo.png') no-repeat;
+    background-size: 100%;
+}
+
+/*
+ * Right Actions
+ */
+
+.handhelds-header__right-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 20%;
+}
+
+/*
+ * Button Icons
+ */
+
+.handhelds-header__menu-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('./menu.png');
+    background-size: 100%;
+}
+
+.handhelds-header__cart-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('./cart.png');
+    background-size: 100%;
+}
+
+.handhelds-header__close-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('./close.png');
+    background-size: 100%;
+}

@@ -1,0 +1,146 @@
+/*
+ * Round Toggle Switch
+ * Snippet: http://callmenick.com/post/css-toggle-switch-examples
+ */
+@mixin roundToggle($label-width, $label-height, $button-width, $button-height) {
+    input.cmn-toggle-round + label {
+        padding: 2px;
+        width: $label-width;
+        height: $label-height;
+        background-color: #dddddd;
+        border-radius: $button-height;
+    }
+
+    input.cmn-toggle-round + label:before, input.cmn-toggle-round + label:after {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        bottom: 1px;
+        content: "";
+    }
+
+    input.cmn-toggle-round + label:before {
+        right: 1px;
+        background-color: #f1f1f1;
+        border-radius: $button-height;
+        transition: background 0.4s;
+    }
+
+    input.cmn-toggle-round + label:after {
+        width: $button-width;
+        height: $button-height;
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: margin 0.4s;
+    }
+
+    input.cmn-toggle-round:checked + label:before {
+        background-color: #8ce196;
+    }
+
+    input.cmn-toggle-round:checked + label:after {
+        margin-left: $button-height;
+    }
+}
+
+/*
+ * Round Flat Toggle Switch
+ * Snippet: http://callmenick.com/post/css-toggle-switch-examples
+ */
+@mixin roundFlatToggle($label-width, $label-height, $button-width, $button-height) {
+    input.cmn-toggle-round-flat + label {
+        padding: 2px;
+        width: $label-width;
+        height: $label-height;
+        background-color: #dddddd;
+        border-radius: $button-height;
+        transition: background 0.4s;
+    }
+
+    input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
+        display: block;
+        position: absolute;
+        content: "";
+    }
+
+    input.cmn-toggle-round-flat + label:before {
+        top: 2px;
+        left: 2px;
+        bottom: 2px;
+        right: 2px;
+        background-color: #fff;
+        border-radius: $button-height;
+        transition: background 0.4s;
+    }
+
+    input.cmn-toggle-round-flat + label:after {
+        width: $button-width;
+        height: $button-height;
+        top: 3px;
+        left: 3px;
+        bottom: 4px;
+        background-color: #dddddd;
+        border-radius: 52px;
+        transition: margin 0.4s, background 0.4s;
+    }
+
+    input.cmn-toggle-round-flat:checked + label {
+        background-color: #8ce196;
+    }
+
+    input.cmn-toggle-round-flat:checked + label:after {
+        margin-left: $button-height;
+        background-color: #8ce196;
+    }
+}
+
+.toggle-switch {
+
+    /* ============================================================
+      COMMON
+    ============================================================ */
+    .cmn-toggle {
+        position: absolute;
+        margin-left: -9999px;
+        visibility: hidden;
+    }
+
+    .cmn-toggle + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+
+    &-large {
+        @include roundToggle(118px, 60px, 58px, 58px);
+        @include roundFlatToggle(114px, 60px, 54px, 54px);
+    }
+
+    &-medium {
+        @include roundToggle(60px, 31px, 29px, 29px);
+        @include roundFlatToggle(56px, 31px, 25px, 25px);
+    }
+
+    &-small {
+        @include roundToggle(32px, 17px, 15px, 15px);
+        @include roundFlatToggle(28px, 17px, 11px, 11px);
+    }
+
+    &--inline {
+        display: flex;
+    }
+}
+
+.toggle-switch__label {
+    margin-bottom: 7.5px;
+
+    &--inline {
+        align-self: center;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}

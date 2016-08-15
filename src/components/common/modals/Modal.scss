@@ -1,0 +1,66 @@
+@import '../../../styles/mixins/breakpoints';
+
+.modal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__container {
+    align-self: center;
+
+    @include breakpoint(handhelds) {
+        max-height: 100%;
+        overflow: scroll;
+    }
+}
+
+.modal__content {
+    width: 600px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+    }
+}
+
+/*
+ * Header
+ */
+
+.modal__header {
+    display: flex;
+}
+
+.modal__title {
+    width: 100%;
+    align-self: center;
+}
+
+.modal__close {
+    align-self: center;
+}
+
+.modal__close-button {
+    float: right;
+    margin: -15px 0;
+    cursor: pointer;
+    font-size: 1.6em;
+}
+
+/*
+ * Body
+ */
+
+.modal__body {
+    margin-top: 30px;
+}

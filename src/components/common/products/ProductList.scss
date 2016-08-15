@@ -1,0 +1,82 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.product-list {
+    display: flex;
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+// Sidebar
+
+.product-list__sidebar {
+    width: 20%;
+    min-width: 250px;
+    @include breakpoint(handhelds) {
+        width: 100%;
+    }
+    @include breakpoint(medium-screens) {
+        padding-right: 30px;
+    }
+    @include breakpoint(wide-screens) {
+        padding-right: 30px;
+    }
+}
+
+.product-list__filter {
+    &:not(:first-child) {
+        margin-top: 40px;
+
+        @include breakpoint(handhelds) {
+            margin-top: 15px;
+        }
+    }
+}
+
+// List
+
+.product-list__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @include breakpoint(handhelds) {
+        margin-top: 30px;
+    }
+}
+
+.product-list__title {
+    width: 100%;
+    text-align: center;
+}
+
+.product-list__collection-description {
+    margin-top: 15px;
+    background-color: $color-secondary;
+    padding: 20px;
+}
+
+.product-list__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.product-list__product-item {
+    flex: 0 1 auto;
+    width: 220px;
+    padding: 8px;
+    @include breakpoint(handhelds) {
+        width: 50%;
+    }
+}
+
+.product-list__no-results {
+    margin: 30px 0 30px 0;
+}
+
+.product-list__pagination {
+    margin-top: 15px;
+    text-align: center;
+}

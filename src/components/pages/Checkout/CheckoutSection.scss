@@ -1,0 +1,53 @@
+@import '../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.checkout-section__header {
+    display: flex;
+}
+
+.checkout-section__number {
+    display: flex;
+    justify-content: center;
+    width: 64px;
+    min-width: 64px;
+    max-width: 64px;
+    height: 64px;
+    background-color: $color-primary;
+    border-radius: 3px;
+    font-family: $font-family-heading;
+    color: #fff;
+    font-size: 45px;
+
+    &--small {
+        width: 40px;
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    & > div {
+        align-self: center;
+    }
+}
+
+.checkout-section__title {
+    width: 100%;
+    margin-left: 20px;
+    align-self: center;
+
+    &--small {
+        margin-left: 15px;
+    }
+}
+
+/*
+ * Body
+ */
+
+.checkout-section__body {
+    margin-top: 10px;
+}

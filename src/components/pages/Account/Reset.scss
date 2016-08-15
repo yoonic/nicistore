@@ -1,0 +1,55 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.reset {
+    margin: 30px 0 40px 0;
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(handhelds) {
+        margin: 10px 0 30px 0;
+    }
+}
+
+.reset__container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.reset__header {
+    text-align: center;
+}
+
+.reset__error-message {
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: $background-color-table-error;
+    border-radius: 3px;
+}
+
+.reset__form {
+    margin-top: 30px;
+}
+
+.reset__form-item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.reset__form-actions {
+    margin-top: 30px;
+}
+
+/*
+ * Modal
+ */
+
+/*
+ * Success Modal
+ */
+.reset__modal-footer {
+    margin-top: 30px;
+}

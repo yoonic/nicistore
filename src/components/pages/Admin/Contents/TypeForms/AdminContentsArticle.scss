@@ -1,0 +1,42 @@
+@import '../../../../../styles/variables.scss';
+
+.admin-contents-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-contents-article__label {
+    margin-bottom: 7.5px;
+}
+
+.admin-contents-article__form-item {
+
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+}
+
+/*
+ * Content
+ */
+
+.admin-contents-article__content {
+    display: flex;
+    margin-top: 30px;
+}
+
+.admin-contents-article__markdown {
+    width: 100%;
+}
+
+.admin-contents-article__preview {
+    width: 100%;
+    margin-left: 30px;
+
+}
+
+.admin-contents-article__markdown-preview {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: $border-radius-default;
+}

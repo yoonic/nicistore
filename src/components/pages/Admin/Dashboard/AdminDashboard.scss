@@ -1,0 +1,38 @@
+@import '../../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.admin-dashboard__header {
+    display: flex;
+}
+
+.admin-dashboard__title {
+    width: 100%;
+    align-self: center;
+}
+
+.admin-dashboard__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+/*
+ * Settings Blocks
+ */
+
+.admin-dashboard__settings-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid #eee;
+    padding: 15px 15px 30px 15px;
+}
+
+.admin-dashboard__settings-title {
+    text-align: center;
+    margin-bottom: 30px;
+}

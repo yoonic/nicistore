@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+.breadcrumbs {
+    display: flex;
+    align-self: center;
+}
+
+.breadcrumbs__list-item {
+    display: inline;
+
+    &:not(:first-child) {
+        margin-left: 15px;
+        &:before {
+            position: relative;
+            right: 7.5px;
+            content: '/';
+            font-size: $font-size-small;
+        }
+    }
+}
+
+.breadcrumbs__link {
+    color: $color-body;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-primary;
+        & > span {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+}
+
+.breadcrumbs__back {
+    cursor: pointer;
+}
+
+.breadcrumbs__back-link {
+    text-decoration: none;
+
+    & > span {
+        color: $color-primary;
+    }
+}

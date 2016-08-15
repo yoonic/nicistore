@@ -1,0 +1,42 @@
+.radio-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-select__input-option {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+/*
+ * Radio item option
+ */
+
+.radio-select__item {
+    display: flex;
+}
+
+.radio-select__input {
+    align-self: center;
+}
+
+.radio-select__label {
+    align-self: center;
+    margin-left: 5px;
+}
+
+.radio-select__option-detail {
+    margin-left: 7.5px;
+}
+
+/*
+ * Optional children
+ */
+
+.radio-select__children {
+    margin-top: 15px;
+}

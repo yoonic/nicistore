@@ -1,0 +1,25 @@
+.quantity-selector {
+    display: flex;
+    padding: 6px;
+    border: 1px solid #dce0e0;
+    border-radius: 3px;
+
+    div {
+        width: 100%;
+        text-align: center;
+
+        &:not(:first-child) {
+            border-left: 1px solid #dce0e0;
+        }
+    }
+
+    .minus,
+    .plus {
+        cursor: pointer;
+    }
+
+    .plus {
+        position: relative;
+        top: 1px;
+    }
+}

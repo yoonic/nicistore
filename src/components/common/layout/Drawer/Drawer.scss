@@ -1,0 +1,43 @@
+@import '../../../../styles/variables';
+
+.drawer {
+    position: fixed;
+    width: $drawer-width;
+    height: 100%;
+    box-sizing: border-box;
+    transition: .25s ease-in-out;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+    background: #f3f3f3;
+    color: rgba(0,0,0,0.6);
+    transform: translateZ(0);
+    @media only screen and (max-width: 400px) {
+        width: 240px;
+    }
+
+    &-left {
+        transform: translateX(-$drawer-width);
+        box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4);
+        @media only screen and (max-width: 400px) {
+            transform: translateX(-240px);
+        }
+
+        &-open {
+            transform: translateX(0);
+        }
+    }
+
+    &-right {
+        right: 0;
+        transform: translateX($drawer-width);
+        box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
+        @media only screen and (max-width: 400px) {
+            transform: translateX(240px);
+        }
+
+        &-open {
+            transform: translateX(0);
+        }
+    }
+}

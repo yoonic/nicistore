@@ -1,0 +1,92 @@
+@import '../../../styles/utils/reset.scss';
+@import '../../../styles/utils/fonts.scss';
+@import '../../../styles/variables.scss';
+
+.application {
+    font-family: $font-family-body;
+    color: $color-body;
+    overflow-x: hidden;
+}
+
+/*
+ * Container
+ */
+
+.application__admin-warning {
+    padding: 20px;
+    background-color: yellow;
+    text-align: center;
+}
+
+.application__container {
+    box-sizing: border-box;
+    transition: .25s ease-in-out;
+
+    &--left-drawer-open {
+        overflow: auto;
+        transform: translateX($drawer-width);
+        @media only screen and (max-width: 400px) {
+            transform: translateX(240px);
+        }
+    }
+
+    &--right-drawer-open {
+        overflow: auto;
+        transform: translateX(-$drawer-width);
+        @media only screen and (max-width: 400px) {
+            transform: translateX(-240px);
+        }
+    }
+}
+
+.application__container-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.application__container-content {
+    width: 100%;
+    max-width: $layout-max-width;
+    padding: 20px 32px 20px 32px;
+
+    @media only screen and (min-width: $layout-max-width) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*
+ * Overlay
+ */
+
+.application__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 999;
+
+    &--left-drawer-open {
+        visibility: visible;
+        transform: translateX($drawer-width);
+        @media only screen and (max-width: 400px) {
+            transform: translateX(240px);
+        }
+    }
+
+    &--right-drawer-open {
+        visibility: visible;
+        transform: translateX(-$drawer-width);
+        @media only screen and (max-width: 400px) {
+            transform: translateX(-240px);
+        }
+    }
+}
+
+.application__overlay-content {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,87 @@
+/*
+ * Header
+ */
+
+.admin-contents-edit__header {
+    display: flex;
+}
+
+.admin-contents-edit__title {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.admin-contents-edit__title-text {
+    align-self: center;
+}
+
+.admin-contents-edit__locale-select {
+    width: 75px;
+    margin-left: 15px;
+}
+
+.admin-contents-edit__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.admin-contents-edit__toolbar-item {
+    align-self: center;
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+/*
+ * Form
+ */
+
+.admin-contents-edit__form {
+    margin-top: 30px;
+}
+
+.admin-contents-edit__common {
+    display: flex;
+}
+
+.admin-contents-edit__left-column {
+    width: 70%;
+}
+
+.admin-contents-edit__right-column {
+    width: 30%;
+    margin-left: 30px;
+}
+
+.admin-contents-edit__form-item {
+
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+}
+
+.admin-contents-edit__checkbox-inline {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-contents-edit__checkbox-inline-items {
+    display: flex;
+    margin-top: 7.5px;
+
+    & > div:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+/*
+ * Type Form
+ */
+
+.admin-contents-edit__unsupported-type {
+    color: red;
+}

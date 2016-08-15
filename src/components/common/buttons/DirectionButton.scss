@@ -1,0 +1,17 @@
+.direction-button {
+    display: flex;
+    justify-content: center;
+    float: left;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+.direction-button__move-button {
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}

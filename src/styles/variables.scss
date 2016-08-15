@@ -1,0 +1,36 @@
+@import './mixins/breakpoints';
+
+$font-family-heading: 'Montserrat', sans-serif;
+$font-family-body: 'Open Sans', sans-serif;
+$font-size-small: 13px;
+$font-size-medium: 16px;
+$font-size-large: 24px;
+$font-size-heading-small: 16px;
+$font-size-heading-medium: 24px;
+$font-size-heading-large: 30px;
+$font-weight-normal: normal;
+$font-weight-bold: 700;
+
+$color-heading: #5c433d;
+$color-body: rgb(85, 85, 85);
+$color-primary: rgb(194, 0, 48);
+$color-primary-hover: #EC003B;
+$color-secondary: #f4efe1;
+$color-error: red;
+$color-label-default: #aaaaaa;
+$color-label-primary: #337ab7;
+$color-label-info: #5bc0de;
+$color-label-success: #5cb85c;
+$color-label-warning: #f0ad4e;
+$color-label-error: #d9534f;
+$color-label-dark: #000000;
+
+$background-color-table-info: #d9edf7;
+$background-color-table-success: #dff0d8;
+$background-color-table-warning: #fcf8e3;
+$background-color-table-error: #f2dede;
+
+$border-radius-default: 3px;
+
+$layout-max-width: 1200px;
+$drawer-width: 300px;

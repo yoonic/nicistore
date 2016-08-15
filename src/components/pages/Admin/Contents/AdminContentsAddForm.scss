@@ -1,0 +1,19 @@
+.admin-contents-add-form__item {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.admin-contents-add-form__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.admin-contents-add-form__button {
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,159 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.article-page {
+    margin: 20px 0 30px 0;
+
+    @include breakpoint(handhelds) {
+        margin: 0;
+    }
+}
+
+.article-page__link {
+    width: 100%;
+    color: $color-body;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+        color: $color-primary;
+        & > span {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+
+    @include breakpoint(handhelds) {
+        color: $color-primary;
+    }
+}
+
+/*
+ * Header
+ */
+
+.article-page__header {
+    display: flex;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+.article-page__title {
+    width: 100%;
+
+    @include breakpoint(handhelds) {
+        order: 1;
+        margin-top: 15px;
+    }
+}
+
+.article-page__articles-home {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: 30px;
+
+    i {
+        align-self: center;
+        margin-right: 5px;
+    }
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        order: 0;
+    }
+}
+
+
+/*
+ * Content
+ */
+
+.article-page__content {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+// Left column
+
+.article-page__left-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.article-page__triangle {
+    position: relative;
+    top: 1px;
+    left: 30px;
+    width: 100%;
+    min-width: 80px;
+    max-width: 80px;
+    height: 30px;
+    background: url('./top_triangle.png') no-repeat;
+    background-size: 100%;
+}
+
+.article-page__markdown {
+    padding: 30px;
+    border: 1px solid #e7e7e7;
+    box-shadow: rgba(0,0,0,.1) 0 2px 5px;
+    border-radius: $border-radius-default;
+}
+
+.article-page__comments {
+    margin-top: 30px;
+}
+
+// Right column
+
+.article-page__right-column {
+    min-width: 250px;
+    max-width: 250px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+
+.article-page__newsletter {
+    padding: 20px;
+    background-color: $color-secondary;
+    border-radius: $border-radius-default;
+
+    @include breakpoint(handhelds) {
+        margin-top: 15px;
+    }
+}
+
+.article-page__newsletter-cta {
+    margin-bottom: 5px;
+}
+
+.article-page__product-suggestions {
+    margin-top: 30px;
+}
+
+.article-page__article-suggestions {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 15px;
+    border-top: 1px solid #eee;
+}

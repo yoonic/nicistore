@@ -1,0 +1,52 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-gallery__current {
+    flex: 0 0 auto;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+    @include breakpoint(wide-screens) {
+        width: 400px;
+        height: 400px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.image-gallery__thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image-gallery__image {
+    display: flex;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    box-sizing: content-box;
+    margin: 5px;
+    border: 1px solid transparent;
+    overflow: hidden;
+
+    &--selected {
+        border: 1px solid #eeeeee;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    img {
+        width: 100%;
+    }
+}

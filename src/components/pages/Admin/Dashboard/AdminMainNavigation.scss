@@ -1,0 +1,15 @@
+.admin-main-navigation {
+    display: flex;
+}
+
+.admin-main-navigation__collections {
+    width: 100%;
+    align-self: center;
+}
+
+.admin-main-navigation__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    margin-left: 20px;
+}

@@ -1,0 +1,22 @@
+@import '../../../styles/variables.scss';
+
+.main-navigation {
+    width: 100%;
+    font-family: $font-family-heading;
+}
+
+.main-navigation__item {
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    & > a {
+        color: $color-heading;
+        text-decoration: none;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

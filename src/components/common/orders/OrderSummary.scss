@@ -1,0 +1,71 @@
+@import '../../../styles/mixins/breakpoints.scss';
+
+.order-summary__row {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*
+ * Items List
+ */
+
+.order-summary__list {
+
+    @include breakpoint(handhelds) {
+        margin-top: 15px;
+    }
+}
+
+.order-summary__item-labels {
+
+    @include breakpoint(handhelds) {
+        display: none;
+    }
+}
+
+.order-summary__item {
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+.order-summary__list-name {
+    width: 100%;
+}
+
+.order-summary__list-quantity-price,
+.order-summary__list-total {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    margin-left: 10px;
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/*
+ * Totals
+ */
+
+.order-summary__totals {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.order-summary__totals-label {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.order-summary__totals-value {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    margin-left: 10px;
+}

@@ -1,0 +1,131 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.account-orders__title {
+    text-align: center;
+
+    @include breakpoint(handhelds) {
+        margin-top: 40px;
+        text-align: left;
+    }
+}
+
+.account-orders__loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.account-orders__content {
+    margin-top: 15px;
+}
+
+.account-orders__no-order {
+    background-color: $color-secondary;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+ * Last Order
+ */
+
+.account-orders__last-order-details {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.account-orders__last-order-date {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.account-orders__last-order-status {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account-orders__last-order-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.account-orders__last-order-action-button {
+    width: 190px;
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+    }
+}
+
+/*
+ * List
+ */
+
+.account-orders__list {
+    margin-top: 15px;
+
+    @include breakpoint(handhelds) {
+        margin-top: 30px;
+    }
+}
+
+.account-orders__list-content {
+    margin-top: 15px;
+}
+
+.account-orders__list-item {
+
+    @include breakpoint(handhelds) {
+        display: flex;
+        border: 1px solid #eee;
+        padding: 15px 15px;
+
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+
+        .account-orders__item-data {
+            width: 100%;
+            display: flex;
+            align-self: center;
+        }
+
+        .account-orders__item-status {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .account-orders__item-link {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-self: center;
+        }
+    }
+}
+
+.account-orders__link {
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+
+        & > span {
+            color: $color-primary;
+        }
+    }
+}

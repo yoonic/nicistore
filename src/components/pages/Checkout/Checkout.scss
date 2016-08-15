@@ -1,0 +1,106 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.checkout {
+    margin-top: 30px;
+}
+
+.checkout__loading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.checkout__section {
+    margin-bottom: 40px;
+}
+
+/*
+ * Header
+ */
+
+.checkout__title {
+    text-align: center;
+}
+
+/*
+ * Content
+ */
+
+.checkout__content {
+    display: flex;
+    margin-top: 40px;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+/*
+ * Left Column
+ */
+
+.checkout__left-column {
+    width: 100%;
+}
+
+/*
+ * Right Column
+ */
+
+.checkout__right-column {
+    width: 100%;
+    margin-left: 30px;
+    padding-left: 30px;
+
+    @include breakpoint(handhelds) {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+    }
+}
+
+.checkout__right-column-title {
+    text-align: center;
+
+    @include breakpoint(handhelds) {
+        margin-top: 40px;
+        text-align: left;
+    }
+}
+
+/*
+ * Order Modal
+ */
+
+.checkout__order-loading-item {
+    display: flex;
+    justify-content: center;
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.checkout__order-created-item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.checkout__order-created-link {
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-left: 15px;
+    }
+}
+
+.checkout__order-error-item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}

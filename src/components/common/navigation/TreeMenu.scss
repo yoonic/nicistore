@@ -1,0 +1,83 @@
+@import '../../../styles/variables.scss';
+
+/*
+ * Title
+ */
+
+.tree-menu__title {
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+
+    &--clickable {
+        cursor: pointer;
+    }
+}
+
+.tree-menu__title-label {
+    width: 100%;
+}
+
+.tree-menu__title-actions {
+    width: 100%;
+    align-self: center;
+    text-align: right;
+}
+
+/*
+ * Body
+ */
+
+.tree-menu__body {
+    padding-top: 5px;
+
+    &--closed {
+        display: none;
+    }
+}
+
+.tree-menu__item {
+    padding: 5px;
+
+    &:not(first-item) {
+        margin-top: 5px;
+    }
+
+    &--self span {
+        color: $color-primary;
+        font-weight: bold;
+    }
+
+    &--selected {
+        background-color: $color-secondary;
+    }
+}
+
+.tree-menu__link {
+    display: block;
+    border-left: 4px solid #fff;
+    padding-left: 8px;
+    color: $color-body;
+    text-decoration: none;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: border;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary;
+        border-left: 4px solid $color-primary;
+        & > span {
+            color: $color-primary;
+        }
+    }
+}
+
+/*
+ * Children
+ */
+
+.tree-menu__child {
+    padding-left: 15px;
+}

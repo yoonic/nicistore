@@ -1,0 +1,59 @@
+@import '../../../styles/variables.scss';
+
+.collection-tree-menu {
+    width: 100%;
+}
+
+.collection-tree-menu__nav {
+    position: relative;
+}
+
+/*
+ * Root Items
+ */
+
+.collection-tree-menu__root-item {
+    float: left;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    padding: 12px;
+
+    &:not(:first-child) {
+        margin-left: 0;
+    }
+
+    &--selected {
+        background-color: $color-secondary;
+    }
+}
+
+.collection-tree-menu__root-item-label {
+
+    & > a {
+        color: $color-body;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+/*
+ * Drawer
+ */
+
+.collection-tree-menu__drawer {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 48px;
+    padding: 20px;
+    width: 100%;
+    background-color: $color-secondary;
+    border-radius: $border-radius-default;
+}
+
+.collection-tree-menu__drawer-block {
+    width: 20%;
+}

@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.register-confirm {
+    padding: 30px;
+}
+
+.register-confirm__message {
+    display: flex;
+    justify-content: center;
+}
+
+.register-confirm__error-message {
+    padding: 10px 30px;
+    text-align: center;
+    background-color: $background-color-table-error;
+    border-radius: 3px;
+}
+
+.register-confirm__loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

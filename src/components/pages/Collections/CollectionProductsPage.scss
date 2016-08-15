@@ -1,0 +1,44 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.collection-products-page {
+    margin-bottom: 10px;
+}
+
+/*
+ * Header
+ */
+
+.collection-products-page__header {
+    display: flex;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+// Breadcrumbs
+
+.collection-products-page__breadcrumbs {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+// Sorting
+
+.collection-products-page__sorting {
+    width: 100%;
+}
+
+/*
+ * Products
+ */
+
+.collection-products-page__products {
+    margin-top: 30px;
+
+    @include breakpoint(handhelds) {
+        margin-top: 20px;
+    }
+}

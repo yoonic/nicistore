@@ -1,0 +1,62 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.user-comment {
+    display: flex;
+}
+
+.user-comment__avatar {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+
+.user-comment__avatar-image {
+    display: block;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0,0,0,.2) 0 2px 3px;
+}
+
+.user-comment__content {
+    width: 100%;
+}
+
+.user-comment__details {
+    display: flex;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+.user-comment__author {
+    width: 100%;
+    align-self: center;
+}
+
+.user-comment__date {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 100%;
+
+    @include breakpoint(handhelds) {
+        justify-content: flex-start;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+
+    span {
+        color: #999;
+    }
+}
+
+.user-comment__message {
+    margin-top: 10px;
+}

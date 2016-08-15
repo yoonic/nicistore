@@ -1,0 +1,17 @@
+.logout__container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 100px 0;
+}
+
+.logout__header {
+    width: 100%;
+    text-align: center;
+}
+
+.logout__spinner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}

@@ -1,0 +1,19 @@
+@import '../../../styles/variables.scss';
+
+.article-summary__content {
+    margin-top: 5px;
+}
+
+.article-summary__link {
+    margin-left: 5px;
+    color: $color-primary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    i {
+        margin-left: 5px;
+    }
+}

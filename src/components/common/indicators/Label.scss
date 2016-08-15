@@ -1,0 +1,43 @@
+@import '../../../styles/variables.scss';
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    background-color: $color-label-default;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+
+    & > span {
+        color: #fff;
+    }
+
+    &-primary {
+        background: $color-label-primary;
+    }
+
+    &-info {
+        background: $color-label-info;
+    }
+
+    &-success {
+        background: $color-label-success;
+    }
+
+    &-warning {
+        background: $color-label-warning;
+    }
+
+    &-error {
+        background: $color-label-error;
+    }
+
+    &-dark {
+        background: $color-label-dark;
+    }
+}

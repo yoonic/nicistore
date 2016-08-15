@@ -1,0 +1,35 @@
+@import '../../../styles/mixins/breakpoints.scss';
+
+.products-sorting-select {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    text-align: right;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+.products-sorting-select__label {
+    width: 100%;
+    padding-right: 10px;
+    align-self: center;
+
+    @include breakpoint(handhelds) {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+.products-sorting-select__options {
+    width: 100%;
+    max-width: 150px;
+    align-self: center;
+
+    @include breakpoint(handhelds) {
+        max-width: 100%;
+        margin-top: 5px;
+    }
+}

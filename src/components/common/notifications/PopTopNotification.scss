@@ -1,0 +1,63 @@
+.pop-top-notification {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 6001;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #fde073;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden;
+    box-shadow: 0 0 5px black;
+    transform: translateY(-50px);
+    animation: slideDown 0.3s 0s 1 ease forwards;
+
+    &-success {
+        background: rgb(166, 211, 144);
+    }
+
+    &-warning {
+        background: rgb(244, 236, 61);
+    }
+
+    &-error {
+        background: rgb(167, 13, 28);
+
+        & .pop-top-notification__text {
+            color: #ffffff;
+        }
+    }
+
+    &--closed {
+        animation: slideUp 0.3s 0s 1 ease forwards;
+    }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-50px); }
+}
+
+.pop-top-notification__content {
+    align-self: center;
+}
+
+.pop-top-notification__close {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    cursor: pointer;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}

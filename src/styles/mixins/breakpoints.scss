@@ -1,0 +1,25 @@
+$MQs: true;
+
+/*$mobile-small: 240px;
+$mobile-large: 320px;
+$tablet-small: 480px;
+$tablet-large: 768px;
+$screen-small: 1024px;
+$screen-large: 1280px;*/
+
+$break-small: 768px;
+$break-large: 1024px;
+
+@mixin breakpoint($point) {
+    @if ($MQs) {
+        @if $point == handhelds {
+            @media only screen and (max-width: $break-small) { @content; }
+        }
+        @else if $point == medium-screens {
+            @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+        }
+        @else if $point == wide-screens {
+            @media only screen and (min-width: $break-large) { @content; }
+        }
+    }
+}

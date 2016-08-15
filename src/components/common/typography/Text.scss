@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+
+.text {
+    font-family: $font-family-body;
+    color: $color-body;
+
+    // Size
+
+    &-large {
+        font-size: $font-size-large;
+    }
+
+    &-medium {
+        font-size: $font-size-medium;
+    }
+
+    &-small {
+        font-size: $font-size-small;
+    }
+
+    // Transformation
+
+    &-lowercase {
+        text-transform: lowercase;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+
+    &-capitalize {
+        text-transform: capitalize;
+    }
+
+    // Weight
+
+    &-normal {
+        font-weight: $font-weight-normal;
+
+        span {
+            font-weight: $font-weight-normal;
+        }
+    }
+
+    &-bold {
+        font-weight: $font-weight-bold;
+
+        span {
+            font-weight: $font-weight-bold;
+        }
+    }
+}

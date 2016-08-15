@@ -1,0 +1,30 @@
+@import '../../../../styles/variables.scss';
+
+.admin-products-upload__form-item {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.admin-products-upload__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.admin-products-upload__button {
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.admin-products-upload__error {
+    margin-top: 3px;
+    color: $color-error;
+
+    & > span {
+        color: $color-error;
+    }
+}

@@ -1,0 +1,23 @@
+/*
+ * Items Ordering
+ */
+
+.admin-homepage-settings__ordering-block {
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.admin-homepage-settings__ordering {
+    display: flex;
+    margin-top: 7.5px;
+}
+
+.admin-homepage-settings__ordering-items {
+    width: 100%;
+}
+
+.admin-homepage-settings__ordering-actions {
+    align-self: center;
+    margin-left: 20px;
+}

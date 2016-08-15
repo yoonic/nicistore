@@ -1,0 +1,16 @@
+.address-field__item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.address-field__address-line2 {
+    margin-top: 10px;
+}
+
+.address-field__saved-addresses {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 3px;
+}

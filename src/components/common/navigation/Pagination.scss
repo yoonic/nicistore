@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+
+.pagination__item {
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: 3px;
+
+    &:not(:first-child) {
+        margin-left: 15px;
+    }
+
+    &:hover:not(.pagination__item--selected) {
+        background-color: $color-secondary;
+    }
+
+    &--selected {
+        padding: 5px 15px 5px 15px;
+        background-color: #eee;
+        font-weight: bold;
+    }
+}
+
+.pagination__link {
+    display: block;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    color: $color-body;
+
+    &:hover {
+        color: $color-primary;
+    }
+}

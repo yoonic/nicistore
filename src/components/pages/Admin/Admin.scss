@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+
+.admin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 3px solid $color-primary;
+    border-radius: 3px;
+}
+
+/*
+ * Header
+ */
+
+.admin-header {
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    border-bottom: 3px solid $color-primary;
+    background-color: $color-secondary;
+}
+
+.admin-title {
+    align-self: center;
+}
+
+.admin-nav {
+    width: 100%;
+    align-self: center;
+    text-align: right;
+}
+
+/*
+ * Container
+ */
+
+.admin-container {
+    padding: 30px;
+}

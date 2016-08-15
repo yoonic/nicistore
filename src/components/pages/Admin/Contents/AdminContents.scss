@@ -1,0 +1,71 @@
+@import '../../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.admin-contents__header {
+    display: flex;
+}
+
+.admin-contents__title {
+    width: 100%;
+    align-self: center;
+}
+
+.admin-contents__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.admin-contents__add-button {
+    width: 130px;
+}
+
+/*
+ * Loader
+ */
+
+.admin-contents__spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*
+ * List
+ */
+
+.admin-contents__list {
+    margin-top: 30px;
+}
+
+.admin-contents__link {
+    & > a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.admin-contents__labels {
+    display: flex;
+}
+
+.admin-contents__tag {
+
+    &:not(:first-child) {
+        margin-left: 5px;
+    }
+}
+
+.admin-contents__label {
+    &:not(:first-child) {
+        margin-left: 5px;
+    }
+}

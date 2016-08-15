@@ -1,0 +1,34 @@
+@import '../../../styles/variables.scss';
+
+.heading {
+    font-family: $font-family-heading;
+    color: $color-heading;
+
+    // Size
+
+    &-large {
+        font-size: $font-size-heading-large;
+    }
+
+    &-medium {
+        font-size: $font-size-heading-medium;
+    }
+
+    &-small {
+        font-size: $font-size-heading-small;
+    }
+
+    // Alignment
+
+    &--align-left {
+        text-align: left;
+    }
+
+    &--align-center {
+        text-align: center;
+    }
+
+    &--align-right {
+        text-align: right;
+    }
+}

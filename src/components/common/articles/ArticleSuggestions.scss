@@ -1,0 +1,36 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.article-suggestions__list {
+    margin-top: 30px;
+}
+
+.article-suggestions__item {
+    display: flex;
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.article-suggestions__item-icon {
+    width: 40px;
+}
+
+.article-suggestions__title {
+    align-self: center;
+    width: 100%;
+}
+
+.article-suggestions__link {
+    color: $color-body;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+        & > span {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+}

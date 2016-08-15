@@ -1,0 +1,40 @@
+@import '../../../styles/variables.scss';
+
+.table__table {
+    width: 100%;
+    border: 1px solid #eeeeee;
+    text-align: left;
+}
+
+.table__row {
+    height: 50px;
+    border-bottom: 1px solid #eeeeee;
+
+    &--info {
+        background-color: $background-color-table-info;
+    }
+
+    &--success {
+        background-color: $background-color-table-success;
+    }
+
+    &--warning {
+        background-color: $background-color-table-warning;
+    }
+
+    &--error {
+        background-color: $background-color-table-error;
+    }
+}
+
+.table__heading,
+.table__data {
+    padding: 0 15px 0 15px;
+    vertical-align: middle;
+}
+
+.table__body > .table__row {
+    &:hover {
+        background-color: #F9F9F9;
+    }
+}

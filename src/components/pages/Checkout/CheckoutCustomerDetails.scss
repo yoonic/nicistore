@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+
+.checkout-customer-details__item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.checkout-customer-details__actions {
+    margin-top: 10px;
+    display: flex;
+}
+
+.checkout-customer-details__edit, {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+        span {
+            color: $color-primary;
+        }
+    }
+}

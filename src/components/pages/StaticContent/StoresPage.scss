@@ -1,0 +1,46 @@
+@import '../../../styles/mixins/breakpoints';
+@import '../../../styles/variables.scss';
+
+.stores-page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.stores-page__content {
+    margin-top: 30px;
+}
+
+.stores-page__block {
+
+    @include breakpoint(wide-screens) {
+        width: 50%;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    &:not(:first-child) {
+        padding-top: 30px;
+        border-top: 1px solid #eee;
+    }
+
+    a {
+        color: $color-primary;
+    }
+}
+
+.stores-page__schedule,
+.stores-page__contacts{
+    font-family: $font-family-body;
+    font-size: $font-size-small;
+    color: $color-body;
+}
+
+.stores-page__schedule {
+    margin-top: 15px;
+}
+
+.stores-page__contacts {
+    margin-top: 5px;
+}

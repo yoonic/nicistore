@@ -1,0 +1,38 @@
+/*
+ * Header
+ */
+
+.admin-orders-edit__header {
+    display: flex;
+}
+
+.admin-orders-edit__title {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
+.admin-orders-edit__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.admin-orders-edit__toolbar-item {
+    align-self: center;
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+/*
+ * Loader
+ */
+
+.admin-orders-edit__spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,54 @@
+@import '../../../styles/mixins/breakpoints';
+
+.product-suggestions__loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.product-suggestions__list {
+    margin-top: 15px;
+
+    @include breakpoint(handhelds) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.product-suggestions__item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+
+        @include breakpoint(handhelds) {
+            margin-top: 0;
+        }
+    }
+
+    @include breakpoint(handhelds) {
+        flex: 1 1 50%;
+        width: 150px;
+    }
+
+    & > a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+
+        img {
+            width: 80%;
+        }
+
+        div {
+            flex: 0 0 auto;
+            width: 100%;
+            align-self: center;
+        }
+    }
+}
+
+.product-suggestions__item-image,
+.product-suggestions__item-name {
+    text-align: center;
+}

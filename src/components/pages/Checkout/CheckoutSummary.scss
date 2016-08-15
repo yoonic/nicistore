@@ -1,0 +1,40 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.checkout-summary__row {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.checkout-summary__warning {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: $color-secondary;
+    border-radius: $border-radius-default;
+}
+
+.checkout-summary__warning-item {
+    margin-top: 5px;
+}
+
+/*
+ * Submit
+ */
+
+.checkout-summary__submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.checkout-summary__submit-button {
+    width: 200px;
+
+    @include breakpoint(handhelds) {
+        width: 100%;
+    }
+}

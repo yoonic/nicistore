@@ -1,0 +1,32 @@
+@import '../../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.admin-customers__header {
+    display: flex;
+}
+
+.admin-customers__title {
+    width: 100%;
+    align-self: center;
+}
+
+/*
+ * Loader
+ */
+
+.admin-customers__spinner {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*
+ * List
+ */
+
+.admin-customers__list {
+    margin-top: 30px;
+}

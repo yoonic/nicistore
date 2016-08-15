@@ -1,0 +1,30 @@
+@import '../../../../styles/variables.scss';
+
+.admin-orders-send-email__form-item {
+
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+}
+
+.admin-orders-send-email__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.admin-orders-send-email__button {
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.admin-orders-send-email__error {
+    margin-top: 3px;
+    color: $color-error;
+
+    & > span {
+        color: $color-error;
+    }
+}

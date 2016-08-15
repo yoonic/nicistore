@@ -1,0 +1,69 @@
+@import '../../../styles/variables.scss';
+
+.button {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+
+    cursor: pointer;
+
+    transition-delay: 0s, 0s;
+    transition-duration: 0.5s, 0.5s;
+    transition-property: background, color;
+    transition-timing-function: ease, ease;
+
+    border-style: none;
+    border-radius: 3px 3px 3px 3px;
+
+    font-family: $font-family-heading;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-transform: uppercase;
+
+    &-font-small {
+        font-size: 10px;
+    }
+
+    &-font-medium {
+        font-size: 14px;
+    }
+
+    &-font-large {
+        font-size: 18px;
+    }
+
+    &-default {
+        background-color: rgb(192, 192, 192);
+        color: rgb(255, 255, 255);
+        &:hover:not(.button--disabled) {
+            color: #ffffff;
+            background: #A5A5A5;
+        }
+    }
+
+    &-primary {
+        background-color: $color-primary;
+        color: rgb(255, 255, 255);
+        &:hover:not(.button--disabled) {
+            color: #ffffff;
+            background: $color-primary-hover;
+        }
+    }
+
+    &--disabled {
+        opacity: 0.3;
+    }
+}

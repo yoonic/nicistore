@@ -1,0 +1,142 @@
+@import '../../../../styles/mixins/breakpoints.scss';
+@import '../../../../styles/variables.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+    border-top: 3px dashed $color-heading;
+    background-color: $color-secondary;
+}
+
+/*
+ * Container
+ */
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: $layout-max-width;
+    padding: 10px 32px 10px 32px;
+    @media only screen and (min-width: $layout-max-width) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*
+ * Content Blocks
+ */
+
+.footer__content {
+    display: flex;
+    width: 100%;
+
+    @include breakpoint(handhelds) {
+        flex-direction: column;
+    }
+}
+
+.footer__block {
+    width: 100%;
+    &:not(:first-child) {
+        margin-left: 40px;
+    }
+
+    @include breakpoint(handhelds) {
+        &:not(:first-child) {
+            margin-top: 40px;
+            margin-left: 0;
+        }
+    }
+}
+
+.footer__block-title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.footer__block-description {
+    margin-top: 15px;
+}
+
+.footer__block-content {
+    margin-top: 15px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: $color-body;
+
+    &:hover > span {
+        color: $color-primary;
+    }
+}
+
+.footer__block-content-item {
+    margin-top: 7.5px;
+}
+
+.footer__list-item {
+    &:not(:first-child) {
+        margin-top: 5px;
+    }
+}
+
+.footer__social-item {
+    display: flex;
+    margin-top: 7.5px;
+
+    & > div {
+        align-self: center;
+    }
+}
+
+.footer__social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__social-link {
+    margin-left: 10px;
+}
+
+/*
+ * Social Icons
+ */
+
+.footer__facebook-icon {
+    background: url('./social_icons/facebook.png');
+    background-size: 100%;
+}
+
+.footer__instagram-icon {
+    background: url('./social_icons/instagram.png');
+    background-size: 100%;
+}
+
+.footer__pinterest-icon {
+    background: url('./social_icons/pinterest.png');
+    background-size: 100%;
+}
+
+.footer__twitter-icon {
+    background: url('./social_icons/twitter.png');
+    background-size: 100%;
+}
+
+/*
+ * Copyright
+ */
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    & > span {
+        color: $color-primary;
+    }
+}

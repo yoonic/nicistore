@@ -1,0 +1,84 @@
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.login {
+    margin: 30px 0 40px 0;
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(handhelds) {
+        margin: 10px 0 30px 0;
+    }
+}
+
+.login__container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login__header {
+    text-align: center;
+}
+
+.login__error-message {
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: $background-color-table-error;
+    border-radius: 3px;
+}
+
+.login__form {
+    margin-top: 30px;
+}
+
+.login__form-item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.login__form-actions {
+    margin-top: 30px;
+}
+
+.login__form-reset {
+    margin-top: 15px;
+}
+
+.login__link {
+    text-decoration: none;
+
+    &:hover {
+        color: $color-primary;
+        & > span {
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+}
+
+/*
+ * Modals
+ */
+
+.login__modal-form-item {
+
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.login__modal-form-actions {
+    display: flex;
+    margin-top: 30px;
+}
+
+.login__modal-form-action-item {
+    width: 100%;
+
+    &:not(:first-child) {
+        margin-left: 15px;
+    }
+}
