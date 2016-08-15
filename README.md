@@ -46,7 +46,7 @@ In order to setup, run and start hacking the app locally you just have to:
 At this point, you should be seeing your local deploy of nicistore/storefront using the data provided by our live API.
 
 ### Admin Backoffice
-In order to perform administrative tasks like adding and editing products or checking out created orders, there's a backoffice in http://localhost:3000/en/adm. In order to access it you need an Administrator account and, if you're running your own [Atlas]((https://github.com/yoonic/atlas), you can check its README in how-to create such account.
+In order to perform administrative tasks like adding and editing products or checking out created orders, there's a backoffice in http://localhost:3000/en/adm. In order to access it you need an Administrator account and, if you're running your own [Atlas](https://github.com/yoonic/atlas), you can check its README in how-to create such account.
 
 ## Contacts
 Comments, suggestions, doubts, flames /dev/random > http://twitter.com/andreftavares
