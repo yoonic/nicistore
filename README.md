@@ -36,6 +36,7 @@ Then, adding that spanking new feature, use-case or special page template will b
 
 ## Installation
 In order to setup, run and start hacking the app locally you just have to:
+
 1. Clone this repository
 2. `npm install`
 3. Open the configuration file for the development environment `config/development.js` and replace the value of `api.atlas.baseUrl` by `https://nicistore.com/api/v1`
