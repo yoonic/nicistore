@@ -41,12 +41,12 @@ In order to setup, run and start hacking the app locally you just have to:
 2. `npm install`
 3. Open the configuration file for the development environment `config/development.js` and replace the value of `api.atlas.baseUrl` by `https://nicistore.com/api/v1`
 4. `npm run dev`
-5. Open a browser and navigate to http://localhost:3000
+5. Open a browser and navigate to `http://localhost:3000`
 
 At this point, you should be seeing your local deploy of nicistore/storefront using the data provided by our live API.
 
 ### Admin Backoffice
-In order to perform administrative tasks like adding and editing products or checking out created orders, there's a backoffice in http://localhost:3000/en/adm. In order to access it you need an Administrator account and, if you're running your own [Atlas](https://github.com/yoonic/atlas), you can check its README in how-to create such account.
+In order to perform administrative tasks like adding and editing products or checking out created orders, there's a backoffice in `http://localhost:3000/en/adm`. In order to access it you need an Administrator account and, if you're running your own [Atlas](https://github.com/yoonic/atlas), you can check its README in how-to create such account.
 
 ## Contacts
 Comments, suggestions, doubts, flames /dev/random > http://twitter.com/andreftavares
