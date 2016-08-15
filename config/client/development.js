@@ -5,7 +5,7 @@ export default {
         title: 'NICI Store',
         locale: {
             available: ['en', 'pt'],
-            default: 'pt'
+            default: 'en'
         }
     },
     api: {
@@ -14,7 +14,7 @@ export default {
         }
     },
     googleAnalytics: {
-        enabled: true,
+        enabled: false,
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID, // Development Property
         options: {
             debug: true
@@ -32,7 +32,7 @@ export default {
         signupFormPostURL: process.env.MAILCHIMP_SIGNUP_FORM_POST_URL
     },
     switchPayments: {
-        enabled: true,
+        enabled: false,
         environment: 'https://api-test.switchpayments.com/v2/',
         publicKey: process.env.SWITCH_PUBLIC_KEY
     }
