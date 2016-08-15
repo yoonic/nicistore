@@ -91,7 +91,8 @@ class AdminCollections extends React.Component {
     handleNewCollectionCloseClick = () => {
         this.setState({showNewCollectionModal: false});
     };
-    sectionsHeadingubmitClick = (data) => {
+
+    handleNewCollectionSubmitClick = (data) => {
         this.context.executeAction(addCollection, data);
     };
 
