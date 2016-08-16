@@ -1,6 +1,8 @@
 # Welcome
 This project is the [NICI Store](https://nicistore.com) encarnation of an Isomorphic (first render on the server, then Single-page App on the client) React Application for E-Commerce Storefronts.
 
+![Product Page](/screenshots/ProductPage.png?raw=true "Product Page")
+
 Currently, there is no vanilla version of it.
 
 Since this is a storefront application, it requires an API Backend to operate and have some use. Even though it was written with [Atlas](https://github.com/yoonic/atlas) in mind, if you wish, you can run it against any other API you like just as long as you either:
