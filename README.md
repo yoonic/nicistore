@@ -33,7 +33,7 @@ By focusing on a specific set of features, isolating them from the whole picture
 Then, adding that spanking new feature, use-case or special page template will be a breeze!
 
 ## Requirements
-- Node.js + NPM
+- Node.js + NPM (v4.x LTS)
 - [Atlas E-Commerce Backend API](https://github.com/yoonic/atlas) (optional)
 
 ## Installation
