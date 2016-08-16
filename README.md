@@ -39,7 +39,7 @@ In order to setup, run and start hacking the app locally you just have to:
 
 1. Clone this repository
 2. `npm install`
-3. Open the configuration file for the development environment `config/development.js` and replace the value of `api.atlas.baseUrl` by `https://nicistore.com/api/v1`
+3. Open the configuration file for the development environment `config/client/development.js` and replace the value of `api.atlas.baseUrl` by `https://nicistore.com/api/v1`
 4. `npm run dev`
 5. Open a browser and navigate to `http://localhost:3000`
 
