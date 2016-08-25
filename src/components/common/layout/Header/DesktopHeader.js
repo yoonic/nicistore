@@ -38,7 +38,8 @@ class DesktopHeader extends React.Component {
     state = {
         cartTotalItems: this.context.getStore(CartStore).getTotalItems(),
         user: this.context.getStore(AccountStore).getAccountDetails(),
-        openedDrawer: this.context.getStore(DrawerStore).getOpenedDrawer()
+        openedDrawer: this.context.getStore(DrawerStore).getOpenedDrawer(),
+        collectionsTreeMenuEnabled: false
     };
 
     //*** Component Lifecycle ***//
@@ -142,7 +143,7 @@ class DesktopHeader extends React.Component {
                             </div>
                         </div>
                     </div>
-                    {this.props.collectionsTree ?
+                    {this.state.collectionsTreeMenuEnabled && this.props.collectionsTree ?
                         <div className="desktop-header__row">
                             <CollectionTreeMenu collections={this.props.collectionsTree} />
                         </div>

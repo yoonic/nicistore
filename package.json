@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "NICI Online Storefront",
   "private": false,
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/yoonic/nicistore.git"
+  },
   "main": "index.js",
   "scripts": {
     "build": "rm -rf static/dist && webpack --stats --progress --config ./webpack/prod.config.js",
