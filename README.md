@@ -1,5 +1,5 @@
 # Welcome
-This project is the [NICI Store](https://nicistore.com) encarnation of an Isomorphic (first render on the server, then Single-page App on the client) React Application for E-Commerce Storefronts.
+This project is the [NICI Store](https://nicistore.com/en) encarnation of an Isomorphic (first render on the server, then Single-page App on the client) React Application for E-Commerce Storefronts.
 
 ![Product Page](/screenshots/ProductPage.png?raw=true "Product Page")
 
