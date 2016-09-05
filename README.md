@@ -51,7 +51,7 @@ At this point, you should be seeing your local deploy of nicistore/storefront us
 > TL;DR  
 Update your `api.atlas.baseUrl` setting to `http://localhost:8000/v1`
 
-In order to use your local installation of Atlas, just point the Storefront to use its API instead of the Live one. In order to do so, you just have to update the configuration setting `api.atlas.baseUrl` of the configuration file you're using (most likely, `config/client/development.js`). If you're running Atlas default development settings, the value that you should set that variable to is `http://localhost:8000/v1` (notice the absense of the "/api" prefix, like with the Live API. That is because, by default, Atlas does not have a route prefix configured and the base API url is indeed "/v1" of the host is is running, in this case "http://localhost:8000").
+By default, when running the Atlas development environment, the API base URL is available in `http://localhost:8000/v1` and this is the value you should set `api.atlas.baseUrl` to. However, if you change the port (e.g "9000") or add a route prefix (e.g. "/api") you should put the respective value as the base URL (e.g. "http://localhost:9000/api/v1").
 
 ### Admin Backoffice
 In order to perform administrative tasks like adding and editing products or checking out created orders, there's a backoffice in `http://localhost:3000/en/adm`. In order to access it you need an Administrator account and, if you're running your own [Atlas](https://github.com/yoonic/atlas), you can check its README in how-to create such account.
