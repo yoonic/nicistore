@@ -38,7 +38,7 @@ Then, adding that spanking new feature, use-case or special page template will b
 - [Crisp.im](https://crisp.im) for live chat
 - [Mailchimp](https://mailchimp.com) for newsletters
 - [Mailgun](https://mailgun.com) for transactional emails
-- [Switch Payments](https://switchpayments.com) for payments, etc etc etc :)
+- [Switch Payments](https://switchpayments.com) for payments
 
 ## Requirements
 - Node.js + NPM (v4.x LTS)
