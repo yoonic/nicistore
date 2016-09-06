@@ -177,7 +177,7 @@ class Homepage extends React.Component {
                                 contentSlug: slugify(intlStore.getMessage(content.name))
                             }, routeParams);
                             return (
-                                <div className="homepage__article-item">
+                                <div key={idx} className="homepage__article-item">
                                     <Link className="homepage__article-link" to="article-slug"
                                           params={articleRouteParams}>
                                         <ArticleSummary key={idx} size="small" content={content} hideLink={true} />
