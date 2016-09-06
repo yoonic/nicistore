@@ -32,6 +32,14 @@ By focusing on a specific set of features, isolating them from the whole picture
 
 Then, adding that spanking new feature, use-case or special page template will be a breeze!
 
+### Batteries Included
+- Mobile-first responsiveness (try resizing the browser window)
+- i18n translation
+- [Crisp.im](https://crisp.im) for live chat
+- [Mailchimp](https://mailchimp.com) for newsletters
+- [Mailgun](https://mailgun.com) for transactional emails
+- [Switch Payments](https://switchpayments.com) for payments, etc etc etc :)
+
 ## Requirements
 - Node.js + NPM (v4.x LTS)
 - [Atlas E-Commerce Backend API](https://github.com/yoonic/atlas) (optional)
@@ -57,4 +65,6 @@ By default, when running the Atlas development environment, the API base URL is 
 In order to perform administrative tasks like adding and editing products or checking out created orders, there's a backoffice in `http://localhost:3000/en/adm`. In order to access it you need an Administrator account and, if you're running your own [Atlas](https://github.com/yoonic/atlas), you can check its README in how-to create such account.
 
 ## Contacts
-Comments, suggestions, doubts, flames /dev/random > http://twitter.com/andreftavares
+Comments, suggestions, doubts, flames, /dev/random, etc...
+- Email **andre [at] yoonic.net**
+- Twitter [@andreftavares](http://twitter.com/andreftavares)
