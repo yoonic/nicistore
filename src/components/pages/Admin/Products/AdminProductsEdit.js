@@ -374,6 +374,7 @@ class AdminProductsEdit extends React.Component {
                                     <InputField label={intlStore.getMessage(intlData, 'currency')}
                                                 labelSize="small" labelWeight="normal"
                                                 value={this.state.product.pricing.currency}
+                                                onChange={this.handlePricingChange.bind(null, 'currency')}
                                                 error={fieldError('pricing.currency')} />
                                     <InputField label={intlStore.getMessage(intlData, 'listPrice')}
                                                 labelSize="small" labelWeight="normal"
