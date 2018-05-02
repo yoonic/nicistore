@@ -1,5 +1,5 @@
 # Welcome
-This project is the [NICI Store](https://nicistore.com/en) encarnation of an Isomorphic (first render on the server, then Single-page App on the client) React Application for E-Commerce Storefronts.
+This project is the [NICI Store](http://nicistore.com/en) encarnation of an Isomorphic (first render on the server, then Single-page App on the client) React Application for E-Commerce Storefronts.
 
 ![Product Page](/screenshots/ProductPage.png?raw=true "Product Page")
 
@@ -49,7 +49,7 @@ In order to setup, run and start hacking the app locally you just have to:
 
 1. Clone this repository
 2. `npm install`
-3. Open the configuration file for the development environment `config/client/development.js` and replace the value of `api.atlas.baseUrl` by `https://nicistore.com/api/v1`
+3. Open the configuration file for the development environment `config/client/development.js` and replace the value of `api.atlas.baseUrl` by `http://nicistore.com/api/v1`
 4. `npm run dev`
 5. Open a browser and navigate to `http://localhost:3000`
 

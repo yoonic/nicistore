@@ -10,7 +10,7 @@ export default {
     },
     api: {
         atlas: {
-            baseUrl: 'https://nicistore.com/api/v1'
+            baseUrl: 'http://nicistore.com/api/v1'
         }
     },
     googleAnalytics: {
