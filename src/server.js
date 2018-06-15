@@ -123,7 +123,7 @@ server.use(async function (req, res, next) {
         await dispatchSetMobileBreakpoint(context, isMobile);
 
         // Collections
-        // Fetch all the collections from the beggining of the application lifecycle.
+        // Fetch all the collections from the beginning of the application lifecycle.
         // These are required, for example, for the main navigation links and since
         // the data is rather "static" doesn't make much sense to be constantly fetching
         // it with every other route change.
