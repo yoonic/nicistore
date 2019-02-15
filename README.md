@@ -66,5 +66,4 @@ In order to perform administrative tasks like adding and editing products or che
 
 ## Contacts
 Comments, suggestions, doubts, flames, /dev/random, etc...
-- Email **andre [at] yoonic.net**
 - Twitter [@andreftavares](http://twitter.com/andreftavares)
