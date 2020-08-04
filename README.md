@@ -63,7 +63,3 @@ By default, when running the Atlas development environment, the API base URL is 
 
 ### Admin Backoffice
 In order to perform administrative tasks like adding and editing products or checking out created orders, there's a backoffice in `http://localhost:3000/en/adm`. In order to access it you need an Administrator account and, if you're running your own [Atlas](https://github.com/yoonic/atlas), you can check its README in how-to create such account.
-
-## Contacts
-Comments, suggestions, doubts, flames, /dev/random, etc...
-- Twitter [@andreftavares](http://twitter.com/andreftavares)
