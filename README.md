@@ -43,6 +43,8 @@ Then, adding that spanking new feature, use-case or special page template will b
 ## Requirements
 - Node.js + NPM (v4.x LTS)
 - [Atlas E-Commerce Backend API](https://github.com/yoonic/atlas) (optional)
+-react 
+-angular
 
 ## Installation
 In order to setup, run and start hacking the app locally you just have to:
