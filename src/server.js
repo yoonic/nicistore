@@ -14,7 +14,7 @@ import isMobileUA from './utils/isMobileUA';
 import webpackStats from '../webpack/stats';
 
 // Flux
-import ApplicationStore from './stores/Application/ApplicationStore';
+import ApplicationStoree from './stores/Application/ApplicationStore';
 
 import clearRouteErrors from './actions/Application/clearRouteErrors';
 import fetchAllCollections from './actions/Collections/fetchAllCollections';
