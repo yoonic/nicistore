@@ -3,7 +3,7 @@ This project is the NICI Store (discontinued e-commerce store) encarnation of an
 
 ![Product Page](/screenshots/ProductPage.png?raw=true "Product Page")
 
-Currently, there is no vanilla version of it.
+Currently, there is no vanilla version of it but an android version is out there on play store
 
 Since this is a storefront application, it requires an API Backend to operate and have some use. Even though it was written with [Atlas](https://github.com/yoonic/atlas) in mind, if you wish, you can run it against any other API you like just as long as you either:
 - Ensure that API has the same endpoints and request/response as Atlas
